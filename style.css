@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* nuetral */
+--dark-blue: hsl(234, 12%, 34%);
+--grayish-blue: hsl(229, 6%, 66%);
+--light-gray: hsl(0, 0%, 98%);
+}
+
+
+body {
+    line-height: 1.7rem;
+    background-color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+
+.container {
+    background-color: var(--light-gray);
+    width: 85vw;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 210px;
+    margin-top: 30px;
+}
+
+.header-text, .power, .text-reliable {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.text-reliable {
+    font-weight: normal;
+}
+
+.power {
+    color: var(--dark-blue);
+    padding: 10px;
+}
+
+header h2:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.box h4 {
+    color: var(--dark-blue);
+}
+
+.box {
+    width: 320px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #333;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#supervisor {
+    border-top: 5px solid var(--Blue);
+}
+
+#team-builder {
+    border-top: 5px solid var(--Red);
+}
+
+#karma {
+    border-top: 5px solid var(--Orange);
+}
+
+#calculator {
+    border-top: 5px solid var(--Cyan);
+}
+
+@media screen and (min-width: 1300px){
+    #content {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+}
+
